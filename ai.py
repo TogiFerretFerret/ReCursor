@@ -4,8 +4,7 @@ from gemini_webapi.constants import Model
 import os
 Secure_1PSID = os.getenv("GOOG_SID")
 Secure_1PSIDTS = os.getenv("GOOG_TS") 
-
-class AI:
+class GeminiAI:
     def __init__(self,model):
         self.client = GeminiClient(
             model=model,
